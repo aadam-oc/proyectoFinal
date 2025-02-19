@@ -1,11 +1,23 @@
+// AppComponent sense components no utilitzats
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    RouterOutlet,
+    RouterLink,
+    RouterLinkActive
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Traveler';

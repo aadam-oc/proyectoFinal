@@ -1,0 +1,20 @@
+<div class="hero-container">
+  <img src="http://localhost:4200/Fondo.png" alt="Fondo" class="hero-background" />
+  <div class="hero-content">
+    <h1 class="hero-title">REGISTRO</h1>
+    <hr class="hero-divider" />
+  </div>
+  <div class="hero-form">
+    <!--<app-register-form></app-register-form>-->
+    <app-register-form (registerEvent)="onRegister($event)"></app-register-form>
+
+  </div>
+
+  <h1>Destinos</h1>
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item.pais }} - {{ item.ciudad }}
+    </li>
+  </ul>
+  
+</div>
