@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
 
 
 @Component({
@@ -12,6 +13,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   imports: [
     HeaderComponent,
     FooterComponent,
+    ContactFormComponent,
     RouterOutlet,
     RouterLink,
     RouterLinkActive
